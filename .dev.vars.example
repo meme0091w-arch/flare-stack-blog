@@ -2,17 +2,13 @@
 # 本地复制为 .dev.vars；生产在 Worker「设置 → 变量和机密」中填写，且一律选择「机密」类型
 # （部署时 `cf deploy` 会保留机密，但会丢弃未写入配置的普通文本变量）。
 
-# --- 必填 ---
-# ✅【标记】BETTER_AUTH_SECRET：061031BJY666
-BETTER_AUTH_SECRET=your-secret-key-run-openssl-rand-hex-32
-# ✅【标记】BETTER_AUTH_URL：https://serpoqwpl.ccwu.cc
-BETTER_AUTH_URL=http://localhost:3000
+BETTER_AUTH_SECRET=061031BJY666
+BETTER_AUTH_URL=https://serpoqwpl.ccwu.cc
 # ✅【标记】GITHUB_CLIENT_ID：GitHub OAuth应用 Client ID
 GITHUB_CLIENT_ID=your-github-client-id
 # ✅【标记】GITHUB_CLIENT_SECRET：GitHub OAuth应用 Client Secret
 GITHUB_CLIENT_SECRET=your-github-client-secret
-# ✅【标记】DOMAIN：serpoqwpl.ccwu.cc
-DOMAIN=blog.example.com
+DOMAIN=serpoqwpl.ccwu.cc
 
 # ✅【标记】仅本地开发使用。设为 dev 时不会真正发信，验证链接打在控制台。
 # ✅【标记】生产环境不要设置，或设为 prod。
