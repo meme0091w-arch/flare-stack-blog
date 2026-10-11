@@ -3,32 +3,37 @@
 # （部署时 `cf deploy` 会保留机密，但会丢弃未写入配置的普通文本变量）。
 
 # --- 必填 ---
+# ✅【标记】BETTER_AUTH_SECRET：061031BJY666
 BETTER_AUTH_SECRET=your-secret-key-run-openssl-rand-hex-32
+# ✅【标记】BETTER_AUTH_URL：你的Worker访问地址(带https)，workers.dev地址或者绑定域名
 BETTER_AUTH_URL=http://localhost:3000
+# ✅【标记】GITHUB_CLIENT_ID：GitHub OAuth应用 Client ID
 GITHUB_CLIENT_ID=your-github-client-id
+# ✅【标记】GITHUB_CLIENT_SECRET：GitHub OAuth应用 Client Secret
 GITHUB_CLIENT_SECRET=your-github-client-secret
+# ✅【标记】DOMAIN：你的站点域名，不带https，例如 blog.mydomain.com
 DOMAIN=blog.example.com
 
-# 仅本地开发使用。设为 dev 时不会真正发信，验证链接打在控制台。
-# 生产环境不要设置，或设为 prod。
+# ✅【标记】仅本地开发使用。设为 dev 时不会真正发信，验证链接打在控制台。
+# ✅【标记】生产环境不要设置，或设为 prod。
 ENVIRONMENT=dev
 
 # --- 可选：Umami ---
-# 客户端埋点还需要构建时变量 VITE_UMAMI_WEBSITE_ID，website id 两边填同一个。
+# ✅【标记】客户端埋点还需要构建时变量 VITE_UMAMI_WEBSITE_ID，website id 两边填同一个。
 # UMAMI_WEBSITE_ID=your-umami-website-id
 # UMAMI_SRC=https://cloud.umami.is
 # UMAMI_API_URL=https://api.umami.is/v1
-# Cloud 用 API Key；自托管用用户名密码，不要和 API Key 同时配。
+# ✅【标记】Cloud 用 API Key；自托管用用户名密码，不要和 API Key 同时配。
 # UMAMI_API_KEY=your-umami-cloud-api-key
 # UMAMI_USERNAME=your-umami-username
 # UMAMI_PASSWORD=your-umami-password
 
 # --- 可选：Turnstile ---
-# 还需要构建时变量 VITE_TURNSTILE_SITE_KEY。
-# 测试 key：https://developers.cloudflare.com/turnstile/troubleshooting/testing/
+# ✅【标记】还需要构建时变量 VITE_TURNSTILE_SITE_KEY。
+# ✅【标记】测试 key：https://developers.cloudflare.com/turnstile/troubleshooting/testing/
 # TURNSTILE_SECRET_KEY=your-turnstile-secret-key
 
 # --- 可选：GitHub API（版本更新检查） ---
-# 不配也能检查更新（读取发布页跳转）。配了会优先走 API，API 失败时退回发布页。
-# 创建无权限的 Fine-grained token: https://github.com/settings/personal-access-tokens
+# ✅【标记】不配也能检查更新（读取发布页跳转）。配了会优先走 API，API 失败时退回发布页。
+# ✅【标记】创建无权限的 Fine-grained token: https://github.com/settings/personal-access-tokens
 # GITHUB_TOKEN=your-github-token
