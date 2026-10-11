@@ -5,13 +5,13 @@
 # --- 必填 ---
 # ✅【标记】BETTER_AUTH_SECRET：061031BJY666
 BETTER_AUTH_SECRET=your-secret-key-run-openssl-rand-hex-32
-# ✅【标记】BETTER_AUTH_URL：你的Worker访问地址(带https)，workers.dev地址或者绑定域名
+# ✅【标记】BETTER_AUTH_URL：https://serpoqwpl.ccwu.cc
 BETTER_AUTH_URL=http://localhost:3000
 # ✅【标记】GITHUB_CLIENT_ID：GitHub OAuth应用 Client ID
 GITHUB_CLIENT_ID=your-github-client-id
 # ✅【标记】GITHUB_CLIENT_SECRET：GitHub OAuth应用 Client Secret
 GITHUB_CLIENT_SECRET=your-github-client-secret
-# ✅【标记】DOMAIN：你的站点域名，不带https，例如 blog.mydomain.com
+# ✅【标记】DOMAIN：serpoqwpl.ccwu.cc
 DOMAIN=blog.example.com
 
 # ✅【标记】仅本地开发使用。设为 dev 时不会真正发信，验证链接打在控制台。
