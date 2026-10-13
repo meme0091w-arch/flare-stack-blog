@@ -203,3 +203,4 @@ _Avoid_: New commit, fork update
 - "Asset" can refer to theme or static resource paths; use **Media** for uploaded files managed by the CMS.
 - "封面图", "banner", "featured image", and "OG image" are not glossary terms. Per-Post cover is **Post Cover**. The site-wide Fuwari banner is **Site Config** `theme.fuwari.homeBg`.
 - "Version" is ambiguous. For Post content, use **Public Content Snapshot** or **Post Revision**. For deployed CMS code, use **Application Release** or **Running Application Release**.
+
