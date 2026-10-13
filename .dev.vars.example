@@ -3,11 +3,11 @@
 # （部署时 `cf deploy` 会保留机密，但会丢弃未写入配置的普通文本变量）。
 
 # --- 必填 ---
-BETTER_AUTH_SECRET=your-secret-key-run-openssl-rand-hex-32
-BETTER_AUTH_URL=http://localhost:3000
+BETTER_AUTH_SECRET=7a2f9d4c8e1b6305f2a794d8c0e3b57182940ac67f1d8b3e5c2a7f90d1b6c48
+BETTER_AUTH_URL=http://testflight.ccwu.cc
 GITHUB_CLIENT_ID=your-github-client-id
 GITHUB_CLIENT_SECRET=your-github-client-secret
-DOMAIN=blog.example.com
+DOMAIN=testflight.ccwu.cc
 
 # 仅本地开发使用。设为 dev 时不会真正发信，验证链接打在控制台。
 # 生产环境不要设置，或设为 prod。
